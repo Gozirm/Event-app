@@ -1,0 +1,54 @@
+:root {
+  --purple: #9747ff;
+  --white: #fff;
+}
+main {
+  font-family: "Space Grotesk", sans-serif;
+}
+.sign-up-in {
+  height: 100vh;
+}
+.side-img {
+  width: 570px;
+}
+.side-img h1 {
+  font-size: 30px;
+}
+.pass-icon {
+  width: 3%;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.pass {
+  position: relative;
+}
+.a-tag {
+  text-decoration: none;
+  color: #9747ff;
+  font-weight: 700;
+}
+.profile-img {
+  width: 50%;
+}
+.dropdown-img {
+  cursor: pointer;
+  position: relative;
+}
+.drop-items{
+  margin: 0;
+  cursor: pointer;
+}
+.drop {
+  position: absolute;
+  width: 210px;
+  height: auto;
+  right: 0.5rem;
+  border-radius: 7px;
+  padding: 8px;
+  font-size: 16px;
+  color: #00000099;
+  font-weight: 400;
+  background-color: #fff;
+}
+

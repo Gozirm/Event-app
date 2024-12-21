@@ -1,0 +1,13 @@
+.events-main {
+  padding: 53px 96px 53px 96px;
+}
+@media (max-width: 768px) {
+  .events-main {
+    padding: 13.5px 21px 13.5px 21px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .events-main {
+    padding: 13.5px 21px 13.5px 21px;
+  }
+}
