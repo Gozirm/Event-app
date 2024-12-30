@@ -89,7 +89,7 @@ const Event = () => {
     }
   };
   const copyEventLink = (eventId) => {
-    const eventLink = `http://localhost:5173/single-page/${eventId}`;
+    const eventLink = `https://event-app-three-pi.vercel.app/single-page/${eventId}`;
     navigator.clipboard
       .writeText(eventLink)
       .then(() => {
