@@ -31,7 +31,7 @@ const SignIn = () => {
     setIsLoading(true);
     try {
       const res = await axios.post(
-        "http://localhost:4090/api/users/sign-in",
+        "https://event-app-9x9f.onrender.com/api/users/sign-in",
         {
           email: data.email,
           password: data.password,

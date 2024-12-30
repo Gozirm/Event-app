@@ -30,7 +30,7 @@ const SignUp = () => {
     setIsLoading(true); // Set loading state to true
     try {
       const res = await axios.post(
-        "http://localhost:4090/api/users/sign-up",
+        "https://event-app-9x9f.onrender.com/api/users/sign-up",
         {
           email: data.email,
           fullname: data.username,

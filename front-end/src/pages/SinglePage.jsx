@@ -29,7 +29,7 @@ const SinglePage = () => {
       setIsLoading(true);
       try {
         const response = await axios.get(
-          `http://localhost:4090/api/users/event/${_id}`,
+          `https://event-app-9x9f.onrender.com/api/users/event/${_id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

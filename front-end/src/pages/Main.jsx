@@ -38,7 +38,7 @@ const Main = () => {
     setIsLoading(true);
     try {
       const res = await axios.get(
-        "http://localhost:4090/api/users/all-events",
+        "https://event-app-9x9f.onrender.com/api/users/all-events",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -77,7 +77,7 @@ const Main = () => {
     try {
       if (savedEvents.has(eventId)) {
         await axios.delete(
-          `http://localhost:4090/api/users/delete-saved-events`,
+          `https://event-app-9x9f.onrender.com/api/users/delete-saved-events`,
           {
             data: {
               userId: user._id,
@@ -92,7 +92,7 @@ const Main = () => {
         toast.success("Event unsaved successfully!");
       } else {
         const response = await axios.post(
-          "http://localhost:4090/api/users/saved-events",
+          "https://event-app-9x9f.onrender.com/api/users/saved-events",
           {
             userId: user._id,
             eventId: eventId,
