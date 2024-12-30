@@ -114,7 +114,7 @@ const Main = () => {
   };
 
   const copyEventLink = (eventId) => {
-    const eventLink = `http://localhost:5173/single-page/${eventId}`; // Adjust the URL as needed
+    const eventLink = `https://event-app-three-pi.vercel.app/single-page/${eventId}`; // Adjust the URL as needed
     navigator.clipboard
       .writeText(eventLink)
       .then(() => {
