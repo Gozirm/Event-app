@@ -1,0 +1,130 @@
+.main-nav {
+  padding-top: 100px; /* Adjust this value based on your navbar height */
+}
+.nav {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px 98px 20px 98px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  font-family: "Space Grotesk", sans-serif;
+}
+.navbar {
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+  margin-top: 10px;
+}
+.active-nav-item {
+  text-decoration: none;
+  position: relative;
+  color: #9747ff;
+}
+.active-nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #9747ff;
+  transition: all 0.3s ease;
+}
+.nav-item {
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+.nav-item a {
+  text-decoration: none;
+  padding: 0.5rem 0rem;
+  transition: color 0.3s ease;
+  color: black;
+}
+.nav-item:hover {
+  color: #9747ff;
+}
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #9747ff;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+  left: 0;
+}
+.btn-sign-up {
+  width: 146px;
+  height: 50px;
+  border-radius: 4px;
+  padding: 12px 36px 12px 36px;
+  background-color: #9747ff;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+.btn-sign-up:hover {
+  background-color: black;
+  transition: 0.3s ease;
+}
+.btn-sign-in {
+  width: 146px;
+  height: 50px;
+  border-radius: 4px;
+  padding: 12px 36px 12px 36px;
+  background-color: white;
+  border: none;
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+  border: 1px solid black;
+}
+.btn-sign-in:hover {
+  background-color: black;
+  transition: 0.3s ease;
+  color: var(--white);
+}
+@media (max-width: 992px) {
+  .nav {
+    padding: 13.5px 21px 13.5px 21px;
+    display: flex;
+    align-items: center;
+  }
+  .btn-sign-in {
+    width: 105px;
+    height: 50px;
+    border-radius: 4px;
+    padding: 12px 20px 12px 20px;
+    background-color: white;
+    border: none;
+    color: black;
+    font-weight: 400;
+    font-size: 15px;
+    border: 1px solid black;
+  }
+  .btn-sign-up {
+    width: 105px;
+    height: 50px;
+    border-radius: 4px;
+    padding: 12px 20px 12px 20px;
+    background-color: #9747ff;
+    border: none;
+    color: white;
+    font-weight: 400;
+    font-size: 13px;
+  }
+  .logo {
+    width: 100%;
+  }
+  .navbar li {
+    font-size: 16px;
+  }
+}

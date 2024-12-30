@@ -1,0 +1,137 @@
+.main {
+  padding: 53px 96px 53px 96px;
+}
+.event-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  z-index: -1;
+}
+.event-cate {
+  position: relative;
+  width: 100%;
+}
+.event-cate:hover .image {
+  opacity: 0.3;
+}
+
+.event-cate:hover .middle {
+  opacity: 1;
+  cursor: pointer;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.event-img {
+  max-width: 100%;
+  max-height: 267px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.text {
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 16px 32px;
+}
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.event-item img {
+  width: 100%;
+}
+.icons {
+  height: 24px;
+  width: 18px;
+}
+.event-title {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.event-title p {
+  font-size: 20px;
+}
+.event-container span {
+  font-weight: 900;
+}
+.main h1 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.main a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+}
+.how-it-works {
+  font-size: 30px;
+  font-weight: 500;
+}
+.join-create-event button {
+  width: 264px;
+  padding: 12px 36px 12px 36px;
+  border-radius: 4px;
+  border: none;
+}
+.create-btn {
+  background-color: black;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+.join-btn {
+  background-color: var(--purple);
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+.join-create-event {
+  padding: 42px 37px 42px 37px;
+  border-radius: 12px;
+  width: 100%;
+  background-color: #0000000f;
+}
+.join-create-event h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+@media (min-width: 992px) {
+  .event-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablet layout (2 columns) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .event-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main {
+    padding: 13.5px 21px 13.5px 21px;
+  }
+}
+
+/* Mobile layout (1 column) */
+@media (max-width: 767px) {
+  .event-container {
+    grid-template-columns: 1fr;
+  }
+  .main {
+    padding: 13.5px 21px 13.5px 21px;
+  }
+}

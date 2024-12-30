@@ -1,0 +1,138 @@
+.event-details {
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+}
+.active-event-details {
+  color: var(--purple);
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+}
+.single-page {
+  padding: 53px 96px 53px 96px;
+}
+.single-page-img {
+  width: 100%;
+  height: 345px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.event-tags {
+  border: 2px solid #ebebed;
+  padding: 10px 12px 10px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #00000099;
+}
+.event-tag-div {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  row-gap: 0.5px;
+
+}
+.event-detail {
+  width: 700px;
+}
+.event-price {
+  padding: 18px;
+  background-color: black;
+  color: white;
+  width: 305px;
+  height: 50%;
+  border-radius: 11px;
+}
+.event-detail span {
+  font-weight: 500;
+  font-size: 30px;
+}
+.event-detail h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.event-des {
+  font-size: 18px;
+  font-family: 400;
+}
+.see-all{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+.other-event-h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+.price-h1{
+    font-size: 26px;
+    font-weight: 500;
+}
+.type{
+    font-size: 20px;
+    font-weight: 400;
+    width: 74px;
+}
+.price{
+    font-size: 20px;
+    font-weight: 700;
+    width: 150px;
+    /* margin: auto; */
+    padding-left: 4rem;
+}
+.event-price button{
+    width: 100%;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    background-color: var(--purple);
+    border: none;
+    padding: 12px 36px 12px 36px;
+    border-radius: 4px;
+}
+@media (max-width: 992px) {
+  .single-page {
+    padding: 13.5px 21px 13.5px 21px;
+  }
+  .event-detail {
+    padding: 0;
+  }
+  .event-price{
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .event-detail h1 {
+    font-size: 30px; /* Adjust font size for smaller screens */
+  }
+
+  .event-detail span {
+    font-size: 20px;
+  }
+  .event-detail {
+    padding: 0;
+  }
+  .event-price {
+    margin-top: 20px;
+  }
+  .event-tag-div {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    row-gap: 0.5px;
+  }
+  .single-page {
+    padding: 13.5px 21px 13.5px 21px;
+  }
+  .event-details {
+    color: black;
+    font-size: 15px;
+  }
+  .active-event-details {
+    font-size: 15px;
+  }
+}

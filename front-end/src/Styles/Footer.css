@@ -1,0 +1,150 @@
+.logo {
+  width: 143px;
+  height: 58px;
+}
+
+.footer {
+  background-color: black;
+  color: var(--white);
+  padding: 53px 96px 53px 96px;
+  margin-bottom: 0;
+}
+.footer-section-1 {
+  width: 420px;
+  height: 225px;
+}
+.input-tag {
+  position: relative;
+  /* width: 434px; */
+  height: 68px;
+  padding: 9px 185px 9px 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+.input-tag::placeholder {
+  color: black;
+}
+.btn-subscribe {
+  position: absolute;
+  left: 19rem;
+  margin: auto;
+  margin-top: 9px;
+  width: 169px;
+  height: 50px;
+  border-radius: 4px;
+  padding: 12px 36px 12px 36px;
+  background-color: var(--purple);
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+}
+.btn-subscribe:hover {
+  background-color: black;
+  transition: 0.3s ease;
+  color: #fff;
+}
+.footer-h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.footer a {
+  text-decoration: none; /* Remove underline from links */
+  padding: 0.5rem 0rem; /* Padding around the links */
+  transition: color 0.3s ease; /* Transition for text color */
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .footer {
+    padding: 13.5px 21px 13.5px 21px;
+  }
+  .input-tag {
+    width: 100%;
+  }
+  .btn-subscribe {
+    left: 16rem;
+    font-size: 15px;
+    padding: 10px 15px 10px 15px;
+  }
+  .footer-section-1 p {
+    font-size: 15px;
+  }
+  .footer-section-1 {
+    width: 420px;
+  }
+  .footer-ul-li {
+    width: 25%;
+  }
+}
+/* ======================= */
+.input-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+}
+
+.input-field {
+  flex: 1; /* Allow the input to grow and fill available space */
+  padding: 20px 190px 20px 10px; /* Add padding to the left to make space for the button */
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Round the left corners */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  outline: none;
+}
+
+.input-button {
+  position: absolute;
+  right: 1rem;
+  top: 11px;
+  border: none;
+  background-color: var(--purple); /* Bootstrap primary color */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 40%;
+}
+
+.input-button:hover {
+  background-color: black;
+  transition: 1s ease;
+}
+
+/* Optional: Add media queries for smaller screens */
+@media (max-width: 600px) {
+  .input-container {
+    flex-direction: column; /* Stack input and button on smaller screens */
+  }
+
+  .input-button {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%; /* Make the button full width */
+    border-radius: 4px; /* Round all corners */
+    margin-top: 5px; /* Add some space between input and button */
+  }
+  .footer-section-1 p {
+    width: 100%;
+  }
+  .input-tag {
+    width: 100%;
+  }
+  .footer-section-1 {
+    width: 100%;
+  }
+  .btn-subscribe {
+    left: 11rem;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer-ul-li{
+    margin: auto;
+    margin-top: 2rem;
+  }
+}
+/* ========================= */
